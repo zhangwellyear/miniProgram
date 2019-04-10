@@ -1,0 +1,41 @@
+<view style="display:none">
+  <image wx:for="{{images}}" wx:key="id" id="{{item.id}}" src="{{item.pic}}" bindload="onImageLoad"></image>
+</view>
+<scroll-view scroll-y="true" style="height:{{scrollH}}px" bindscrolltolower="loadImages">
+  <view style='width: 100%'>
+    <view wx:for="{{images_display}}" wx:key="id" class="content">
+      <view class="every_content">
+        <view class='content_header'>
+          <image src='http://localhost:8080/upload/astar_default.gif' class='astar'></image>
+          <text class='usr_name'>{{ item.author }}</text>
+        </view>
+
+        <!-- 图片描述区域 -->
+        <view class="content_description">
+          {{ item.des }}
+        </view>
+        
+        <!-- 用户旅游图片区域 -->
+        <image src="{{item.pic}}" style="width:100%;height:{{item.height}}px" class='content_image' id="travel_img" bindtap='reverse_img'></image>
+        
+        <!-- 标签区域 -->
+        <view class="tag">
+          <view class="topic"><view class='topic_txt'>#{{ item.topic }}</view></view>
+          <view id="{{item.geo_id}}" class="geo" bindtap="go_position">{{ item.geo_name }}</view>
+        </view>
+
+        <view class="content_footer">
+          <view class="favor">
+            <image src='../icons/favor.svg' class='favor_img'></image>
+          </view>
+          <view class="comment">
+            <image src='../icons/comment.svg' class='comment_img'></image>
+          </view>
+          <view class="transpond">
+            <image src='../icons/transmit.svg' class='transpond_img'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>

@@ -1,0 +1,18 @@
+<view class="page-body">
+  <view class="page-section page-section-gap">
+    <map
+      id="myMap"
+      style="width: 100%; height: 1040rpx;"
+      latitude="{{latitude}}"
+      longitude="{{longitude}}"
+      markers="{{markers}}"
+      covers="{{covers}}"
+      scale="{{scale}}"
+      show-location
+    ></map>
+  </view>
+  <view class="button-area">
+    <button class='btn page-btn-5A' bindtap='show5A'>5A级景区打卡</button>
+    <button class='btn page-btn-footprint' bindtap='onReady'>我的足迹</button>
+  </view>
+</view>

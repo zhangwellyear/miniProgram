@@ -1,0 +1,118 @@
+page {
+  background-color: #f3f3f3;
+}
+
+/**
+ *  整个内容的样式
+ */
+.content {
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+/**
+ * 每条内容的样式
+ */
+.every_content {
+  width: 92%;
+  margin: 2% auto;
+}
+
+/**
+ *  处理内容中的头部部分
+ */
+ .content .content_header {
+   width: 100%;
+   height: 40px; 
+   left: 0px;
+   position: relative;
+ }
+
+/**
+ 头像的样式
+*/
+.content .content_header .astar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  left: 0px;
+  position: absolute;
+}
+
+/**
+ * 用户名
+ */
+.content .content_header .usr_name {
+  width: 100%;
+  left:45px;
+  line-height: 40px;
+  font-size: 12px;
+  font-weight: 900;
+  color: skyblue;
+  position: absolute;
+}
+
+.content .content_description {
+  font-size: 14px;
+  color: green;
+  height: 40px;
+  line-height: 40px;
+}
+
+/**
+ *  内容图片的样式
+ */
+.content .content_image {
+  width: 100%;
+  margin-top: 2%;
+  border-radius: 5%;
+}
+
+/**
+ * 标签区域
+ */
+.tag {
+  display: flex;
+}
+
+.topic {
+  text-align: left;
+  flex: 1;
+}
+
+.topic_txt {
+  display: inline-block;
+  color: blue;
+  font-size: 14px;
+  background-color: #cccccc;
+  border-radius: 10%;
+}
+
+.geo {
+  color: lightblue;
+  font-size: 14px;
+  flex: 2;
+  text-align: right;
+}
+
+.content .content_footer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+}
+
+.favor, .comment, .transpond {
+  margin: 0 auto;
+  flex: 1;
+  text-align: center;
+}
+
+image.favor_img, image.comment_img, image.transpond_img {
+  height: 35px;
+  width: 35px;
+  margin: 0 auto;
+}
+
+.content .content_footer .transpond {
+  flex: 1;
+}

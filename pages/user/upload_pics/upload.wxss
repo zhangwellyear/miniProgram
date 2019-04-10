@@ -1,0 +1,150 @@
+/* pages/user/upload_pics/upload.wxss */
+.topic {
+
+}
+
+.content {
+  width: 100%;
+  margin-top: 2%;
+}
+
+.content .content_input {
+  width: 100%;
+}
+
+.upload_pics {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.uploader_img {
+  display: block;
+  width: 85px;
+  height: 85px;
+}
+
+.uploader_box {
+  float: left;
+  position: relative;
+  margin-right: 9px;
+  margin-bottom: 9px;
+  width: 77px;
+  height: 77px;
+  border: 1px solid #d9d9d9;
+}
+
+.uploader_box:before, .uploader_box:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #d9d9d9;
+}
+
+.uploader_box:before {
+  width: 2px;
+  height: 39.5px;
+}
+
+.uploader_box:after {
+  width: 39.5px;
+  height: 2px;
+}
+
+.uploader_input {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.hideTrue {
+  display: none
+}
+
+.geo {
+  position: static;
+  display: block;
+  color: bisque;
+}
+
+/* pages/biji/biji.wxss */
+
+page{
+font-size: 30rpx;
+}
+.left{ float: left}
+.right{float: right}
+.index_seach {
+width: 100%;
+margin-top: 20rpx;
+height: auto;
+margin-bottom: 30rpx;
+}
+/* 表单类通用 表单类通用 表单类通用*/
+.input_w {
+width: 100%;
+height: 90rpx;
+line-height: 90rpx;
+/* background: lightblue; */
+}
+
+.input_w text {
+display: block;
+width: 20%;
+text-align: center;
+/* background: red; */
+}
+
+.input_w .input {
+width: 75%;
+height: 70rpx;
+margin-top: 10rpx;
+border: 1px solid #ccc;
+box-sizing: border-box;
+}
+
+.input input {
+margin-top: 10rpx;
+margin-left: 10rpx;
+/* background: lightblue; */
+}
+
+
+.textarea_w {
+display: block;
+width: 100%;
+height: 180rpx;
+overflow: hidden;
+}
+
+.textarea_w text {
+display: block;
+width: 20%;
+text-align: center;
+line-height: 90rpx;
+}
+
+.textarea {
+width: 75%;
+height: 140rpx;
+margin-top: 10rpx;
+border: 1px solid #ccc;
+padding: 8rpx;
+/* background: lightblue; */
+overflow: hidden;
+}
+
+.textarea textarea {
+width: 100%;
+height: 130rpx;
+/* background: lightcoral; */
+}

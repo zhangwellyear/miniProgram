@@ -1,0 +1,45 @@
+<!--pages/user/upload_pics/upload.wxml-->
+<form bindsubmit="upload_pics">
+  <radio-group class="radio-group" name="type">
+  <label class="radio">
+    <radio value="1" checked="{{item.checked}}" />公开
+    <radio value="0" checked="{{item.checked}}" />私密
+  </label>
+</radio-group>
+
+  <view class='input_w professional'>
+    <view class='input left'>
+      <input placeholder='请为你的图片选择一个主题吧~' cursor-spacing='20' name='topic'></input>
+    </view>
+  </view>
+
+  <view class='input_w professional'>
+    <view class='input left'>
+      <input placeholder='请为你的图片添加一段简短描述吧~' cursor-spacing='20' name='desc'></input>
+    </view>
+  </view>
+
+  <view class='textarea_w'>
+    <view class='textarea left'>
+      <textarea placeholder='分享你旅途中的糗事给小伙伴们吧~' cursor-spacing='20' name="content"></textarea>
+    </view>
+  </view>
+
+  <view>点击可预览选好的图片:{{pics.length}}/9</view>
+  <view class="upload_pics">
+    <view wx:for="{{pics}}" wx:for-item="image" wx:key="{{image}}">
+      <view>
+        <image class="uploader_img" src="{{image}}" data-src="{{image}}" bindtap="previewImage"></image>
+      </view>
+    </view>
+
+    <!-- isShow 这个是判断是否进行触发点隐藏操作-->
+    <view class="uploader_box {{isShow?'true':'hideTrue'}}">
+      <view class="uploader_input" bindtap="chooseImage"></view>
+    </view>
+  </view>
+  
+  <input class='geo' bindtap='get_geo' placeholder='点击获取地理坐标' value='{{geo_name}}'></input>
+
+  <button class='btn' formType="submit">确定</button>
+</form>

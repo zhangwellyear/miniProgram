@@ -1,0 +1,28 @@
+<!--pages/user/user.wxml-->
+<view class='content'>
+  <view class='header'>
+    <image src='{{user_astar_src}}' bindtap='upload_pics' id='user_astar'></image>
+  </view>
+
+  <!-- 关注和粉丝 -->
+  <view class='relation'>
+    <text>关注：{{attention}}</text>
+    <text>粉丝：{{fans}}</text>
+  </view>
+
+  <!-- 菜单列表 -->
+  <view class='menu'>
+    <view class='menu_view' bindtap='viewer' wx:for="{{menu_arr}}" wx:key="{{menu_arr}}" wx:for-index="idx" id="{{idx}}">
+      {{item.content}}
+    </view>
+  </view>
+</view>
+
+<!-- 跳转至上传图片页面 -->
+<button class='btn' bindtap='navigate_pic_upload'>我要上传图片</button>
+
+<!-- 跳转至用户足迹地图页面 -->
+<button class='btn' bindtap='navigate_map'>查看我的足迹</button>
+
+<view class='footer'>
+</view>

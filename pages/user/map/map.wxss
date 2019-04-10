@@ -1,0 +1,25 @@
+.page-body {
+  height: 580rpx;
+  position: static;
+}
+
+.button-area {
+  width: 100%;
+  display: flex;
+  position: absolute;
+}
+
+.page-btn-5A {
+  width: 45%;
+  margin-left: 2%;
+  align-items: left;
+}
+
+.page-btn-footprint {
+  width: 45%;
+  align-items: right;
+}
+
+.page-body-button {
+  margin-bottom: 30rpx;
+}

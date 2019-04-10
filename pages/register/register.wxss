@@ -1,0 +1,5 @@
+/* pages/register/register.wxss */
+input {
+  height: 20rpx;
+  border: 1px solid purple;
+}

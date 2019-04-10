@@ -1,0 +1,15 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="user_name">用户名：</view>
+  <input name="usr_name" placeholder="给自己起个好听的名字吧~" />
+
+  <view class='pwd'>密码：</view>
+  <input name='pwd' password='true' ></input>
+
+  <view class='pwd'>再次输入密码：</view>
+  <input name='confirm_pwd' password='true'></input>
+  
+  <!-- 注册的按钮 -->
+  <view class="btn-area">
+    <button form-type="submit">注册</button>
+  </view>
+</form>
